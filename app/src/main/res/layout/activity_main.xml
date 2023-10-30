@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="Deprecated">
+
+    <ImageView
+        android:contentDescription="@string/just_new_way_to_gifs"
+        android:id="@+id/myGifs"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:startIconDrawable="@drawable/person"
+        android:id="@+id/textField1"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="330dp"
+        android:hint="@string/inptName"
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/personName"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:nextFocusForward="@id/personPassword"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:startIconDrawable="@drawable/password"
+        android:layout_x="20dp"
+        android:layout_width="336dp"
+        android:layout_y="420dp"
+        android:id="@+id/textField2"
+        android:layout_height="wrap_content"
+        android:hint="@string/inptPassword"
+        app:endIconMode="password_toggle"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="336dp"
+            android:id="@+id/personPassword"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@id/containedButton"
+            android:singleLine="true"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_x="150dp"
+        android:layout_y="490dp"
+        android:id="@+id/containedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+
+        />
+   </AbsoluteLayout>

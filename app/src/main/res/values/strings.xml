@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Absolute Abso</string>
+    <string name="inptName">input name here e.g. devank</string>
+    <string name="inptPassword">input password here</string>
+    <string name="login">Login</string>
+    <string name="just_new_way_to_gifs">Just new way to gifs</string>
+</resources>
